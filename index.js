@@ -27,7 +27,6 @@ class AllureEnvironment extends NodeEnvironment {
     async teardown() {
         formatErrors(this.allure)
         this.allure.endSuite();
-        console.log(this.allure)
         await super.teardown();
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "allure-jest-circus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "aluure reporting for the jest-circus runner",
   "main": "index.js",
   "dependencies": {
