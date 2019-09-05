@@ -7,7 +7,7 @@ Allure-jest-circus is a custom jest environment built on top of `jest-environmen
 
 Install the package:
 
-`npm install allure-jest circus`
+`npm install allure-jest-circus`
 
 Add to your jest config:
 
