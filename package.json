@@ -1,6 +1,6 @@
 {
   "name": "allure-jest-circus",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "aluure reporting for the jest-circus runner",
   "main": "index.js",
   "dependencies": {
@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jack Wilde",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azohra/allure-jest-circus.git"
