@@ -1,7 +1,7 @@
 {
-  "name": "allure-environment",
+  "name": "allure-jest-circus",
   "version": "0.0.1",
-  "description": "",
+  "description": "aluure reporting for the jest-circus runner",
   "main": "index.js",
   "dependencies": {
     "allure-js-commons": "1.3.2",
@@ -13,6 +13,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Jack Wilde",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azohra/allure-jest-circus.git"
+  },
+  "keywords": [
+    "allure",
+    "jest-circus",
+    "jest"
+  ],
+  "bugs": {
+    "url": "https://github.com/azohra/allure-jest-circus/issues"
+  },
+  "homepage": "https://github.com/azohra/allure-jest-circus#readme"
 }
