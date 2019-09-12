@@ -25,8 +25,6 @@ class AllureEnvironment extends NodeEnvironment {
     }
 
     async teardown() {
-        formatErrors(this.allure)
-        this.allure.endSuite();
         await super.teardown();
     }
 
@@ -47,6 +45,17 @@ class AllureEnvironment extends NodeEnvironment {
                 break;
             case 'test_fn_failure':
                 this.allure.endCase('failed', event.error)
+                break
+            case 'run_describe_finish':
+                formatErrors(this.allure);
+                // Catch error thrown by second describe finish
+                try {
+                    this.allure.endSuite();
+                } catch (error) {
+                    if (error.message != "Cannot read property 'end' of undefined") {
+                        throw error
+                    }
+                }
                 break
             default:
                 break;
